@@ -12,6 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .tabs {
@@ -82,6 +83,13 @@ textarea {
   resize: vertical;
   color: #333;
   background-color: #fff;
+}
+
+#configTab textarea {
+  background-color: #333;
+  color: #fff;
+  /* make it fit within it's parent */
+  width: calc(100% - 22px);
 }
 
 .config {

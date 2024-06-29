@@ -1,3 +1,5 @@
+// content.js
+
 chrome.storage.local.get(["enabledSites", "darkModeEnabled"], (result) => {
   const enabledSites = result.enabledSites || [];
   const currentUrl = window.location.href;
