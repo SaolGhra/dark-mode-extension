@@ -1,0 +1,43 @@
+:root {
+  color-scheme: dark;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 20px;
+  color: #b4b4b4;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #3e8e41;
+}
+
+.status {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #333;
+}
