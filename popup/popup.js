@@ -61,7 +61,6 @@ function updateStatus(enabled) {
   statusElement.style.color = enabled ? "#4CAF50" : "#f44336";
 }
 
-// Initialize status on popup open
 chrome.storage.local.get(["darkModeEnabled"], (result) => {
   updateStatus(result.darkModeEnabled);
 });
