@@ -1,31 +1,62 @@
-:root {
-  color-scheme: dark;
-}
-
 body {
+  background-color: #121212;
+  color: #e0e0e0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   padding: 20px;
-  max-width: 300px;
+  width: 350px;
   text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabs {
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.tab-btn.active {
+  background-color: #333;
+}
+
+.tab {
+  display: none;
+}
+
+.tab.active {
+  display: block;
 }
 
 h3 {
   margin-bottom: 20px;
-  color: #b4b4b4;
+  color: #fff;
 }
 
 button {
-  display: block;
-  width: 100%;
   padding: 10px 20px;
   font-size: 16px;
   background-color: #4caf50;
   color: white;
   border: none;
-  cursor: pointer;
   border-radius: 4px;
+  cursor: pointer;
   margin-bottom: 10px;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -37,7 +68,35 @@ button:active {
 }
 
 .status {
-  margin-top: 20px;
   font-size: 14px;
+  margin-top: 10px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
   color: #333;
+  background-color: #fff;
+}
+
+.config {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.config label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.config button {
+  display: inline-block;
+  margin-top: 10px;
 }

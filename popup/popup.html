@@ -7,9 +7,30 @@
     <link rel="stylesheet" href="popup.css" />
   </head>
   <body>
-    <h3>Force Dark Mode</h3>
-    <button id="toggleDarkMode">Toggle Dark Mode</button>
-    <div class="status" id="status"></div>
+    <div class="container">
+      <div class="tabs">
+        <button id="homeTabBtn" class="tab-btn active">Home</button>
+        <button id="configTabBtn" class="tab-btn">Config</button>
+      </div>
+
+      <div id="homeTab" class="tab active">
+        <h3>Dark Mode Enforcer</h3>
+        <button id="toggleDarkMode">Toggle Dark Mode</button>
+        <div class="status" id="status"></div>
+      </div>
+
+      <div id="configTab" class="tab">
+        <div class="config">
+          <label for="siteList">Enabled Sites:</label>
+          <textarea
+            id="siteList"
+            placeholder="Enter URLs (one per line)"
+            spellcheck="false"
+          ></textarea>
+          <button id="saveSites">Save Sites</button>
+        </div>
+      </div>
+    </div>
 
     <script src="popup.js"></script>
   </body>
